@@ -4,22 +4,22 @@ I am Gokulraj Mahendiran, a first-year M.Sc. student in Computer-Aided Conceptio
 
 ## Research Experiences
 
-### [Numerical Modelling of Flexible Heat Pipes in Space Applications](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Numerical%20Modelling%20of%20Flexible%20Heat%20Pipes%20in%20Space%20Applications.md)
+#### Final year project - [Numerical Modelling of Flexible Heat Pipes in Space Applications](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Numerical%20Modelling%20of%20Flexible%20Heat%20Pipes%20in%20Space%20Applications.md)
 
-### [Fluid-Structure Interaction of Flexible beams using SPH](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Fluid-Structure%20Interaction%20of%20Flexible%20beams%20using%20Smoothed-Particle%20Hydrodynamics.md)
+#### Internship at University of Manchester - [Fluid-Structure Interaction of Flexible beams using SPH](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Fluid-Structure%20Interaction%20of%20Flexible%20beams%20using%20Smoothed-Particle%20Hydrodynamics.md)
 
-### [Integrated Camber and Twist Morphing wings for Unmanned Aerial Vehicles](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Integrated%20Camber%20and%20Twist%20Morphing%20Wing%20for%20Unmanned-Aerial%20Vehicles.md)
+#### Internship at Indian Institute of Technology Kanpur - [Integrated Camber and Twist Morphing wings for Unmanned Aerial Vehicles](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Integrated%20Camber%20and%20Twist%20Morphing%20Wing%20for%20Unmanned-Aerial%20Vehicles.md)
 
 
 ## Projects
 
-### [VTOL](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/VTOL.md)
+#### [VTOL](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/VTOL.md)
 
-### [Aerothon](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Aerothon%20'22.md)
+#### [Aerothon](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Aerothon%20'22.md)
 
-### [Crop Duster UAV](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Crop%20Duster%20UAV.md)
+#### [Crop Duster UAV](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Crop%20Duster%20UAV.md)
 
-### [Strawberry stacker](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Strawberry%20Stacker.md)
+#### [Strawberry stacker](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Strawberry%20Stacker.md)
 
 
 <!-- ### [Design of Amphibian Aircraft](https://github.com/gokulraj-m-nitt/Research_Internships/tree/804deca3596f7cc70ed94644bbd8d7ca552e38b4/Design%20of%20Amphibian%20Aircraft) -->
