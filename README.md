@@ -4,23 +4,23 @@ I am Gokulraj Mahendiran, currently a first year student pursuing M.Sc. in Compu
 
 ## Projects
 
-### [VTOL](https://github.com/gokulraj-m-nitt/Projects/tree/92d721d826c055a0f7db73659dc380c01eabdc23/VTOL)
+### [VTOL](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/VTOL.md)
 
-### [Aerothon](https://github.com/gokulraj-m-nitt/Projects/tree/92d721d826c055a0f7db73659dc380c01eabdc23/Aerothon)
+### [Aerothon](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Aerothon%20'22.md)
 
-### [Crop Duster UAV](https://github.com/gokulraj-m-nitt/Projects/tree/92d721d826c055a0f7db73659dc380c01eabdc23/Crop%20Duster)
+### [Crop Duster UAV](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Crop%20Duster%20UAV.md)
 
-### [Strawberry stacker](https://github.com/gokulraj-m-nitt/Projects/tree/92d721d826c055a0f7db73659dc380c01eabdc23/Strawberry%20Stacker)
+### [Strawberry stacker](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Strawberry%20Stacker.md)
 
 
 
 ## Research Internships
 
-### [Numerical Modelling of Flexible Heat Pipes in Space Applications]()
+### [Numerical Modelling of Flexible Heat Pipes in Space Applications](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Numerical%20Modelling%20of%20Flexible%20Heat%20Pipes%20in%20Space%20Applications.md)
 
-### [Fluid-Structure Interaction of Flexible beams using SPH]()
+### [Fluid-Structure Interaction of Flexible beams using SPH](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Fluid-Structure%20Interaction%20of%20Flexible%20beams%20using%20Smoothed-Particle%20Hydrodynamics.md)
 
-### [Integrated Camber and Twist Morphing wings for Unmanned Aerial Vehicles]()
+### [Integrated Camber and Twist Morphing wings for Unmanned Aerial Vehicles](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Integrated%20Camber%20and%20Twist%20Morphing%20Wing%20for%20Unmanned-Aerial%20Vehicles.md)
 
 <!-- ### [Design of Amphibian Aircraft](https://github.com/gokulraj-m-nitt/Research_Internships/tree/804deca3596f7cc70ed94644bbd8d7ca552e38b4/Design%20of%20Amphibian%20Aircraft) -->
 
