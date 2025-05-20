@@ -1,5 +1,14 @@
 # Greetings!! 
-I am Gokulraj Mahendiran, currently a first year student pursuing M.Sc. in Computer-Aided Conception in Mechanical Engineering at Rheinisch-Westfälische Technische Hochschule Aachen, Germany. This repository highlights the project works in which I have been involved within the Aeromodelling club of my college and the research internships during my Bachelors at National Institute of Technology Tiruchirappalli.
+I am Gokulraj Mahendiran, a first-year M.Sc. student in Computer-Aided Conception in Mechanical Engineering at Rheinisch-Westfälische Technische Hochschule Aachen, Germany. This repository highlights my research experiences during my Bachelor's at National Institute of Technology Tiruchirappalli, including internships and my final year project, as well as various project works I participated in as a member of my college's Aeromodelling Club.
+
+
+## Research Experiences
+
+### [Numerical Modelling of Flexible Heat Pipes in Space Applications](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Numerical%20Modelling%20of%20Flexible%20Heat%20Pipes%20in%20Space%20Applications.md)
+
+### [Fluid-Structure Interaction of Flexible beams using SPH](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Fluid-Structure%20Interaction%20of%20Flexible%20beams%20using%20Smoothed-Particle%20Hydrodynamics.md)
+
+### [Integrated Camber and Twist Morphing wings for Unmanned Aerial Vehicles](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Integrated%20Camber%20and%20Twist%20Morphing%20Wing%20for%20Unmanned-Aerial%20Vehicles.md)
 
 
 ## Projects
@@ -12,15 +21,6 @@ I am Gokulraj Mahendiran, currently a first year student pursuing M.Sc. in Compu
 
 ### [Strawberry stacker](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Strawberry%20Stacker.md)
 
-
-
-## Research Internships
-
-### [Numerical Modelling of Flexible Heat Pipes in Space Applications](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Numerical%20Modelling%20of%20Flexible%20Heat%20Pipes%20in%20Space%20Applications.md)
-
-### [Fluid-Structure Interaction of Flexible beams using SPH](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Fluid-Structure%20Interaction%20of%20Flexible%20beams%20using%20Smoothed-Particle%20Hydrodynamics.md)
-
-### [Integrated Camber and Twist Morphing wings for Unmanned Aerial Vehicles](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Research%20Experience/Integrated%20Camber%20and%20Twist%20Morphing%20Wing%20for%20Unmanned-Aerial%20Vehicles.md)
 
 <!-- ### [Design of Amphibian Aircraft](https://github.com/gokulraj-m-nitt/Research_Internships/tree/804deca3596f7cc70ed94644bbd8d7ca552e38b4/Design%20of%20Amphibian%20Aircraft) -->
 
