@@ -6,7 +6,7 @@
 - Integrated a tri-copter mechanism with a fixed-wing platform and designed the CAD model of the UAV.  
 - Worked in the fabrication of the prototype and the testing phase of the model.
 
-## 2. [Aerothon](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/Aerothon%20'22.md)
+## 2. [SAE AeroTHON](https://github.com/gokulraj-m02/gokulraj-m02/blob/main/Projects/SAE%20AeroTHON%202022.md)
 *SAE India*  
 - Designed and fabricated a multi-rotor UAV capable of autonomously dropping a payload at a specified target location.  
 - Involved in modeling the CAD of the UAV and carried out structural analysis for the entire structure.  
