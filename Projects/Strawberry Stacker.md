@@ -44,6 +44,8 @@ The project was executed through a step-by-step process involving computer visio
   - The **gripper module** is activated to pick the box.
   - The drone ascends and proceeds to the final target location.
 
+![](Source_Images/ss1.mp4)
+
 - ### Stage 4: Full Field Automation
 
   A field-like layout was created with:
