@@ -166,7 +166,11 @@ The UAV is designed to autonomously drop payloads on a color-coded target based 
 
 ## 3. My Role
 
-
+  - Contributed to the selection of the propulsion system, including motor–propeller combination, battery, and electronics.
+  - Carried out structural analysis for the drone mainframe, particularly for H-frame configuration.
+  - Worked on manufacturing carbon fiber–balsa composite plates and assembling the drone.
+  - Involved in piloting and manual flight rounds testing.
+  - Developed the image processing algorithm for target detection in autonomous missions.
 
 ---
 
