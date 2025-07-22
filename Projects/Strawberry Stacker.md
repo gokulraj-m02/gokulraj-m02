@@ -44,7 +44,13 @@ The project was executed through a step-by-step process involving computer visio
   - The **gripper module** is activated to pick the box.
   - The drone ascends and proceeds to the final target location.
 
-![](Source_Images/ss1.mp4)
+![](Source_Images/ss1.gif)  ![](Source_Images/ss2.gif)
+
+*Takeoff (Left) and Picking up strawberry box (Right)*
+
+![](Source_Images/ss3.gif)  ![](Source_Images/ss4.gif)
+
+*Dropping the strawberry box (Left) and Landing (Right)*
 
 - ### Stage 4: Full Field Automation
 
@@ -63,6 +69,12 @@ The project was executed through a step-by-step process involving computer visio
      - Lands and places the box in a **grid pattern** on the truck bed.
   4. Resumes the search from the last position.
   5. Repeats until the entire field is cleared.
+
+![](Source_Images/ss5.png)
+*Entire Field Setup*
+
+![](Source_Images/ss6.png) ![](Source_Images/ss7.png)![](Source_Images/ss8.png) ![](Source_Images/ss9.png)
+*Results from Simulation*
 
 ---
 
