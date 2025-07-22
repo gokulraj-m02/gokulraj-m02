@@ -24,7 +24,7 @@ We began by analyzing **80 airfoils**. Seven with promising aerodynamic profiles
 
 The analysis was conducted across a Reynolds number range of **100,000 to 500,000** in 10,000 increments.
 
-![]()  
+![Batch Analysis – XFLR5 Results](Source_Images/cd1.jpg)  
 *Batch Analysis – XFLR5 Results*
 
 The **S1223 airfoil** (shown in light blue in the graph) performed best with:
@@ -32,7 +32,9 @@ The **S1223 airfoil** (shown in light blue in the graph) performed best with:
 - **Cd = 0.01786**
 - **Cl/Cd = 66.32** at 0° angle of attack
 
-![]()  
+![Geometry of S1223 Airfoil](Source_Images/cd2.jpg)
+
+![XFLR5 Analysis of S1223 Airfoil](Source_Images/cd3.jpg)
 *XFLR5 Analysis of S1223 Airfoil*
 
 ---
@@ -43,19 +45,21 @@ Various wing planforms (rectangular, tapered, swept back) were simulated and out
 - **Rectangular central section with tapered winglets**  
 - **Cl = 1.084**, **Cd = 0.044**, **Wing area = 0.72 m²**
 
-![]()  
+![Custom Wing Model in XFLR5](Source_Images/cd4.jpg)  
 *Custom Wing Model in XFLR5*
 
 The wing was modeled in **three detachable parts** for portability and ease of assembly.
 
-![]()  
+![CAD Model – Wing Assembly](Source_Images/cd5.jpg)  
 *CAD Model – Wing Assembly*
 
 The wings can be fabricated from **XPS foam** by CNC hot wire cutting and reinforced with **aluminum rods**:
   - Rod diameters: **24mm, 22mm, 12mm, 10mm**
   - Placement optimized based on high-pressure zones
 
-![]()  
+![Internal Structure & Rod Placement](Source_Images/cd6.jpg)
+![Internal Structure & Rod Placement](Source_Images/cd8.jpg)
+![Internal Structure & Rod Placement](Source_Images/cd9.jpg)
 *Internal Structure & Rod Placement*
 
 ---
@@ -68,7 +72,10 @@ The structure was tested for following conditions to observe the stress distribu
 
 Results confirmed that both **stress and strain remained within safe limits**.
 
-![]()  
+![Structural Stress Analysis – Wing](Source_Images/cd11.jpg)  
+
+![Structural Stress Analysis – Wing](Source_Images/cd12.jpg)
+
 *Structural Stress Analysis – Wing*
 
 ---
@@ -81,18 +88,24 @@ Chosen tail configuration: **Twin Boom High-Mounted Tail**, offering:
 - Lighter structure 
 - Space for integrating spray mechanisms inside booms
 
-![]()  
-*Fuselage and Empennage CAD*
+![Fuselage and Empennage CAD](Source_Images/cd16.jpg)
+
+*Fuselage CAD*
+
+![Fuselage and Empennage CAD](Source_Images/cd15.jpg)
+
+*Empennage CAD*
 
 ---
 
 ### 2.5 Stability & Control
 
 - Longitudinal stability ensured by a **negative slope** of the **Cm vs. Alpha** curve
-- Directional stability confirmed via **Cn vs. Beta** curve
+![Cm vs α](Source_Images/cd17.jpg)
 
-![]()  
-*Stability Graphs – Cm vs α and Cn vs β*
+- Directional stability confirmed via **Cn vs. Beta** curve
+![Cn vs β](Source_Images/cd18.jpg)
+
 
 #### Static Margin:
 - **Neutral Point (Xnp)**: 13.9 cm from wing LE  
@@ -104,7 +117,7 @@ Chosen tail configuration: **Twin Boom High-Mounted Tail**, offering:
 - **Elevator**: 25% of horizontal stabilizer area  
 - **Rudder**: 25% of vertical stabilizer area
 
-![]()  
+![Control Surface Implementation](Source_Images/cd19.jpg)
 *Control Surface Implementation*
 
 ---
@@ -127,6 +140,9 @@ Chosen tail configuration: **Twin Boom High-Mounted Tail**, offering:
 - **Battery**: 5200 mAh 3S LiPo
 - **Servos**: 16g for control surfaces
 
+![Motor](Source_Images/cd20.jpg)
+![ESC](Source_Images/cd21.jpg)
+
 This motor-propeller combination provides a **maximum thrust** of **3500g**.
 
 #### Weight Breakdown:
@@ -144,8 +160,10 @@ The **fertilizer spraying system** was designed with:
 - Nozzle flow rate: **11 ml/s** (theoretical coverge area: $\phi$ = ~1m
 - Nozzles: 6 total (2 per boom, 2 at wing ends)
 
-![]()  
-*CAD – Spray System Layout*
+![Spray System](Source_Images/cd22.jpg)
+![Spray System](Source_Images/cd23.jpg)
+
+*Spray System*
 
 ---
 
@@ -153,8 +171,16 @@ The **fertilizer spraying system** was designed with:
 
 Final **2D Drawings** and **Exploded Views** were created for disassembled transportability.
 
-![]()  
-*2D Drawing & Exploded View of the Aircraft*
+![2D Drawing](Source_Images/cd24.jpg) 
+*2D Drawing of the Aircraft*
+
+![2D Drawing](Source_Images/cd28.jpg) 
+
+*Final Assembled model*
+
+![2D Drawing](Source_Images/cd27.jpg)
+
+*Disassembled view*
 
 ---
 
