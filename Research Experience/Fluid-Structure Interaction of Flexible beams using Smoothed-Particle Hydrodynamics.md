@@ -23,7 +23,8 @@ Initially, the SPH model is validated by comparing its results with those obtain
 
 The simulation was conducted within a 2D fluid channel, specifically designed for evaluating slender fiber deformation under high particle density conditions.
 
-- [Geometric representation of fluid channel, CAD model representation]
+![](Source_Images/um1.png)
+*Geometric representation of fluid channel (Left) and CAD model (Right)*
 
 The fluid properties were configured to replicate water with:
 - Density (ρ): 1 g/cm³
@@ -33,11 +34,19 @@ An inter-particle distance of 0.006 cm was chosen. All surfaces, except inflow a
 
 In the simulation setup, the inflowing fluid adopts a distinctive parabolic velocity profile that varies both spatially, following the channel's height, and temporally, oscillating with respect to time. This combination of spatially and temporally varying velocity profiles replicates wave-like effects typically encountered in real-world scenarios.
 
-- [Parabolic inflow fluid profile, velocity-time variation]
+![](Source_Images/um2.png)
+*Parabolic inflow fluid velocity profile (Left) and Velocity-Time variation (Right)*
 
 The flexible beam was defined using the “flexstruc” library with the following material properties:
 
-- [Table of properties of flexible beam]
+| Parameters | Value |
+|------------|-------|
+| Height | 0.5 cm |
+| Cross-Sectional Area | 0.0001 sqcm |
+| Density | 10 g/cm³ |
+| Young's Modulus | 10⁶ Pa |
+
+*Properties of Flexible Beam*
 
 ### 2.2 DualSPHysics Setup
 
@@ -47,24 +56,50 @@ The DualSPHysics configuration file included definitions of:
 - Inflow velocity profiles
 - Time-stepping and simulation parameters
 
-- [File setup description]
+  ![](Source_Images/um3.png)
+  *File setup description*
 
 ### 2.3 Validation
 
 The SPH model was validated against mortar FEM results by configuring the simulation with identical parameters. The SPH simulation was run for 0.075 seconds, capturing output at various time steps for comparison.
 
-- [Initial configuration, fluid velocity in the fluid channel]
-- [SPH and mortar FEM comparison]
+![](Source_Images/um4.png)
+*Initial configuration (Left) and Velocity legend of the fluid (Right)*
+
+<br>
+
+![](Source_Images/um5.png)
+*Mortar finite element method (Left) and SPH (Right) results at t=0.062s*
+
+![](Source_Images/um6.png)
+*Mortar finite element method (Left) and SPH (Right) results at t=0.074s*
 
 Tip velocity and displacement were plotted across the time domain:
+![](Source_Images/um8.jpg)
+*Tip velocity of Flexible beam vs time*
 
-- [Tip velocity, displacement vs time]
+<br>
+
+![](Source_Images/um9.jpg)
+ *Displacement of Flexible beam vs time*
+
+<br>
 
 ### 2.4 Convergence Study
 
 A convergence study was conducted on the SPH simulation setup to ascertain the stability and consistency of the results. The simulation was executed across multiple interparticle distances and maximum tip displacement was analyzed across simulations.
 
-- [Table of comparison of convergence study, graph comparison]
+| S.No. | Interparticle Distance (dp) | No. of Particles |
+|-------|-----------------------------|------------------|
+| Case_1 | 0.0025cm | 512,505 |
+| Case_2 | 0.005cm | 128,573 |
+| Case_3 | 0.006cm | 89,574 |
+| Case_4 | 0.0075cm | 57,212 |
+
+*Different cases considered for the convergence study*
+
+![](Source_Images/um10.jpg)
+*Convergence study results*
 
 The results were plotted with maximum tip displacement versus number of particles. Displacement values showed stability for inter-particle distances below 0.006 cm.
 
@@ -75,19 +110,46 @@ A systematic analysis was conducted by varying the Young's modulus of the beam w
 - E₂ = 5×10⁶ Pa  
 - E₃ = 1×10⁷ Pa
 
-- [Flow field visualization for different E]
+![](Source_Images/um11.png)
+*Flow field visualisation at t=0.025s (E₁)*
+
+![](Source_Images/um12.png)
+*Flow field visualisation at t=0.025s (E₂)*
+
+![](Source_Images/um13.png)
+*Flow field visualisation at t=0.025s (E₃)*
+
+<br>
 
 For each case, flow field visualizations were captured at maximum fluid velocity (50 cm/s), where the beam was maximally deformed:
 
-- [Flow field visualization at max velocity]
+![](Source_Images/um14.png)
+*Flow field visualisation at t=0.05s (E₁)*
+
+![](Source_Images/um15.png)
+*Flow field visualisation at t=0.05s (E₂)*
+
+![](Source_Images/um16.png)
+*Flow field visualisation at t=0.05s (E₃)*
+
+<br>
 
 Additional visualizations were taken when fluid inlet velocity was zero, showing the beam returning to its original shape:
 
-- [Flow field visualization at zero velocity]
+ ![](Source_Images/um17.png)
+*Flow field visualisation at t=0.075s (E₁)*
+
+![](Source_Images/um18.png)
+*Flow field visualisation at t=0.075s (E₂)*
+
+![](Source_Images/um19.png)
+*Flow field visualisation at t=0.075s (E₃)*
+
+<br>
 
 The tip displacement results for all three cases were compared:
-
-- [Comparison of tip displacement]
+![](Source_Images/um20.jpg)
+*Comparison of Tip displacement vs Time*
 
 Beams with higher Young’s modulus (e.g., E = 1×10⁷ Pa) showed lower deformation, confirming the expected trend.
 
