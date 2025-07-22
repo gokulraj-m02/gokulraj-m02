@@ -83,6 +83,7 @@ We analyzed the wing across velocities from **8 m/s to 16 m/s** at **3° angle o
     - One enables **rotation (0°–90°) transition**
 
 ![Front servo](Source_Images/vt5.png) ![Rear servo](Source_Images/vt4.png)
+
 *Front motor (left) and rear (Right) motor attachements*
 
 - #### Final proposed model
