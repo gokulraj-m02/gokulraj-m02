@@ -14,12 +14,12 @@ The conceptualization began by analyzing mission requirements such as endurance,
 ### 2.2 Aerofoil Selection
 
 We began with aerofoil selection using **XFLR5** for aerodynamic analysis. Around **12 aerofoils** were considered initially, and a batch analysis was conducted. Based on performance, the following were shortlisted:
-- **GOE225** – selected for its high lift coefficient
-- **NACA6409** – chosen for lower wing weight
+- **GOE225** – selected for its high lift coefficient (yellow)
+- **NACA6409** – chosen for lower wing weight (blue)
 
 After comparing key aerodynamic parameters like **Cl**, **Cd**, and **Cl/Cd**, **GOE225** was finalized.
 
-![]()  
+![XFLR5 Aerofoil Analysis](Source_Images/vt1.jpg)  
 *XFLR5 Aerofoil Analysis*
 
 ---
@@ -34,6 +34,9 @@ We aimed for an **aspect ratio of ~8**, suited for glider-like aircraft with rel
 - **Wingspan**: 2 m  
 - **Root Chord**: 30 cm  
 - **Tip Chord**: 13 cm
+
+![XFLR5 Aerofoil Analysis](Source_Images/vt2.png)  
+*Initial (left) and Final (right) Wing planform design*
 
 We analyzed the wing across velocities from **8 m/s to 16 m/s** at **3° angle of attack**, resulting in:
 
@@ -50,9 +53,6 @@ We analyzed the wing across velocities from **8 m/s to 16 m/s** at **3° angle o
 
 - **High-wing** configuration is choosen because it offers **high ground clearance**, **reduced ground effect**, and **greater stability** due to the center of mass being below the center of lift
 - Wing is constructed with **rib structures and spars** for increased strength
-
-![]()  
-*Internal Rib-Spar Structure of Wing*
 
 - Stabilizer Aerofoils:
   - **Horizontal**: NACA0012
@@ -82,14 +82,18 @@ We analyzed the wing across velocities from **8 m/s to 16 m/s** at **3° angle o
     - One compensates **yaw (gyroscopic stability)**  
     - One enables **rotation (0°–90°) transition**
 
-![]()  
+![Front servo](Source_Images/vt5.png) ![Rear servo](Source_Images/vt4.png)
+*Front motor (left) and rear (Right) motor attachements*
+
+- #### Final proposed model
+![Final CAD Model](Source_Images/vt3.png)
 *Final CAD Model with Rotor & Servo Placements*
 
 ---
 
 ### 2.7 Prototype & Testing
 
-For prototyping, a **simplified rectangular wing planform** was used to ease fabrication. The structure incorporated:
+For testing tri-copter configuration, a **simplified rectangular wing planform** was used to ease fabrication. The structure incorporated:
 - **Twin-boom support**  
 - Frame made from **aluminum rods**  
 - Wings: **rib structure reinforced with carbon fiber rods**
@@ -97,11 +101,15 @@ For prototyping, a **simplified rectangular wing planform** was used to ease fab
 
 The modification for the prototype was done primarily with the goal of testing the transition mechanism in the Tri-copter configuration.
 
-![]()  
+![Initial Prototype](Source_Images/vt6.jpg)
 *Initial Prototype Model*
 
-![]()  
-*Prototype Testing Images*
+![Testing](Source_Images/vt7.png)
+![Testing](Source_Images/vt8.png) 
+*Initial Prototype Testing*
+
+
+![Testing](Source_Images/vt9.gif)
 
 ---
 
