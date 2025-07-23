@@ -107,8 +107,24 @@ A polyhedral mesh is applied using ANSYS Fluent Meshing. The same materials are 
 
 The simulation has no inlets or outlets. A 30% fill is patched similarly by assigning a liquid volume fraction of 1 in both fluid and porous regions.
 
-> [Table of boundary conditions]  
-> [Table of setup details]
+| Boundary zone | Condition | Value |
+|--------------------|-----------------|-------|
+| Evaporator | Thermal, Temperature | 400 K |
+| Adiabatic zone | Thermal, Heat flux | 0 |
+| Condenser | Thermal, Temperature | 298 K|
+| Porous zone | Contact angle (Wall Adhesion) | 30 degrees |
+
+*Table of boundary conditions* 
+
+| Model | Settings |
+|-------|----------|
+| Energy equation | Enabled |
+| Multiphase | VOF |
+| Space | 3D |
+|Time | Steady |
+| Viscous | Standard k-e |
+
+*Table of setup*
 
 The simulation is executed in steady-state for 5,000 iterations. Results confirm the operational principle of wick-based heat pipes: vapour travels from the evaporator to the condenser, condenses, and then returns via the porous medium to the evaporator.
 
@@ -132,15 +148,38 @@ The geometry is modeled in SolidWorks and features a 720 mm length, 12.7 mm oute
 
 Grid independence is tested with meshes ranging from 1.78 lakh to 33.25 lakh cells. The mesh with 4.6 lakh cells is chosen due to its close agreement with the finest mesh.
 
-> [Table of grid independence results]
+| No. of cells | 1,78,847 |  4,60,874 | 33,25,747 |
+|--------------|----------|-----------|-----------|
+| T_evap,avg | 376.41 K | 374.34 K | 374.58 K |
+| T_adia,avg | 344.94 K | 345.62 K | 345.47 K |
+| T_cond,avg | 312.14 K | 312.56 K | 312.63 K |
+
+*Table of grid independence results*
 
 Materials include stainless steel (adiabatic region - shell), deionised water (liquid and vapour phases), and aluminium (heating and cooling blocks).
 
-> [Table of boundary conditions]
+| Name (Part) | Boundary Condition | Value |
+|--------------------|-----------------|-------|
+| Heating block | Heat flux | 4973.6 W/m2 |
+| Adiabatic, wall | Heat flux | 0 |
+| Cooling block | Convection | 102 W/mK (F.S.T. - 308K)|
+| Porous zone | Contact angle (Wall Adhesion) | 30 degrees |
+| Symmetry wall | Symmetry | - |
+
+*Table of boundary conditions*
 
 A Pressure-based solver, without gravity and operating under steady state conditions, is employed. The simulation setup and solver settings remain consistent with those utilised in previous simulations involving boiling and condensation, and porous medium. The setup is initialised with a saturation temperature of 333 K and a pressure of 20,000 Pa and the liquid region (50% of heat-pipe region) is patched with liquid volume fraction of 1.
 
-> [Table for model details]
+| Model | Settings |
+|-------|----------|
+| Energy equation | Enabled |
+| Multiphase | VOF |
+| Space | 3D |
+|Time | Steady |
+| Viscous | Standard k-e |
+
+*Table of setup*
+
 > [Volume fraction patch]
 
 The simulation is run for 5,000 iterations. The following plots shows the area-weighted average of temperature of evaporator, condenser and adiabatic section. From these plots, it is observed that the numerical model for the experimental setup of the heat pipe is providing converging results which are reliable.
