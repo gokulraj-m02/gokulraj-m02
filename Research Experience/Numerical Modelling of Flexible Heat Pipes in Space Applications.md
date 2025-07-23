@@ -57,12 +57,36 @@ Meshing is performed with a fine surface mesh of 0.2 mm minimum element size and
 
 A grid independence study is carried out by comparing results for mesh sizes ranging from 1 lakh to over 20 lakh cells. The mesh with 10,45,482 cells is selected for simulation, as it provides temperature results close to that of the finer mesh.
 
-> [Table of independent results]
+|No. of cells | 2,13,904 | 10,45,482 | 20,86,861 |
+|-------------|----------|-----------|-----------|
+| T_evap,avg | 353.981 K | 350.824 K | 350.427 K |
+| T_adia,avg | 344.872 K | 341.785 K | 341.232 K |
+| T_cond,avg | 335.137 K | 334.648 K | 334.224 K |
+
+*Table of independent results*
 
 Material definitions include stainless steel for the solid regions and deionised water (liquid and vapour phases) for the working fluid. The simulation uses a pressure-based solver with gravity enabled along the length and operates in steady state. The VOF model is used to track the liquid-vapour interface, where water vapour is set as the primary phase and water liquid (deionized water) as the secondary.
 
-> [Table of boundary conditions]  
-> [Table of setup]
+| Boundary condition | Thermal BC type | Value |
+|--------------------|-----------------|-------|
+| Evaporator surface | Heat flux | 12531 Wm2 |
+| Adiabatic surface | Heat flux | 0 |
+| Condenser surface | Convection | 102 W/mK (F.S.T. - 303K)|
+| Wall | Heat flux | 0 |
+| Inner walls | Velocity | No slip |
+| Symmetry wall | Symmetry | - |
+
+*Table of boundary conditions* 
+
+| Model | Settings |
+|-------|----------|
+| Energy equation | Enabled |
+| Multiphase | VOF |
+| Space | 3D |
+|Time | Steady |
+| Viscous | Standard k-e, Enhanced wall |
+
+*Table of setup*
 
 The setup is initialised with a temperature of 333K and pressure of 20,000 Pa. A 30% fill ratio is patched by assigning a liquid volume fraction of 1 in the liquid region and 0 in the vapour region.
 
