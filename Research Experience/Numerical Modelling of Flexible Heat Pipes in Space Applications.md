@@ -21,19 +21,24 @@ The experimental setup consists of a thermosyphon tube, heating block, and cooli
 
 Heat input to the evaporator section is provided through a DC power source, ranging from 25W to 250W in increments of 25W. In the condenser section, cooled water is circulated to absorb the heat effectively. The system operates with a 30% filling ratio of the working fluid, which corresponds to 18.7 ml of deionised water. The thermocouples were placed along the length of the thermosyphon to record the temperature distribution across its surface.
 
-> [Experimental apparatus, schematic sketch of experimental]
+![](Source_Images/ugt1.png)
+
+![](Source_Images/ugt2.png)
+
+*Schematic sketch of experimental*
 
 To examine the effect of bending on thermal performance, the experiments were carried out at four distinct bending angles: 0°, 30°, 60°, and 90°. At each angle, temperature readings were recorded at different power inputs, and the effective thermal conductivity was calculated using the temperature differential between the evaporator and condenser sections.
 
-> [Bending angle of the pipes]
+![](Source_Images/ugt3.png)
+  *Different bending angles*
 
 Temperature readings along the surface, from the evaporator to the condenser, were plotted to understand temperature distribution and heat transfer behaviour. These data points allowed for evaluating how bending affects thermal conductivity under varying operational conditions.
 
-> [Temp vs thermocouple position]
+![](Source_Images/ugt4.jpg)
 
 The calculated thermal conductivity was then plotted against input power for each bending angle. The results consistently showed a decrease in effective thermal conductivity with increasing bending angles, indicating the thermal resistance introduced due to geometrical changes.
 
-> [Thermal conductivity vs input power]
+![](Source_Images/ugt5.jpg)
 
 ---
 
@@ -49,11 +54,15 @@ All simulations are conducted using ANSYS Fluent with multiphase modeling (Volum
 
 A three-dimensional numerical model of the thermosyphon is created in ANSYS SpaceClaim. The geometry consists of a 720 mm long tube with a 12.7 mm outer diameter and a 10.5 mm inner diameter. The geometry is divided into three zones: the evaporator (heat input), the adiabatic section (no heat transfer), and the condenser (convective cooling applied).
 
-> [Schematics geometry]
+![](Source_Images/ugt6.png)
+
+*Geometry of the setup*
 
 Meshing is performed with a fine surface mesh of 0.2 mm minimum element size and 10 boundary layers is applied to the evaporator, adiabatic section, condenser, and walls to capture the near-wall effects. The internal volume is filled with polyhedral elements up to a maximum size of 0.5 mm, to achieve a balance between accuracy and efficiency.
 
-> [Meshed geometry]
+![](Source_Images/ugt7.jpg)
+
+*Meshed geometry*
 
 A grid independence study is carried out by comparing results for mesh sizes ranging from 1 lakh to over 20 lakh cells. The mesh with 10,45,482 cells is selected for simulation, as it provides temperature results close to that of the finer mesh.
 
@@ -63,7 +72,7 @@ A grid independence study is carried out by comparing results for mesh sizes ran
 | T_adia,avg | 344.872 K | 341.785 K | 341.232 K |
 | T_cond,avg | 335.137 K | 334.648 K | 334.224 K |
 
-*Table of independent results*
+*Table of Mesh independency test results*
 
 Material definitions include stainless steel for the solid regions and deionised water (liquid and vapour phases) for the working fluid. The simulation uses a pressure-based solver with gravity enabled along the length and operates in steady state. The VOF model is used to track the liquid-vapour interface, where water vapour is set as the primary phase and water liquid (deionized water) as the secondary.
 
@@ -86,16 +95,25 @@ Material definitions include stainless steel for the solid regions and deionised
 |Time | Steady |
 | Viscous | Standard k-e, Enhanced wall |
 
-*Table of setup*
+*Table of Model setup*
 
 The setup is initialised with a temperature of 333K and pressure of 20,000 Pa. A 30% fill ratio is patched by assigning a liquid volume fraction of 1 in the liquid region and 0 in the vapour region.
 
-> [Image of Initialised temperature, volume fraction]
+![](Source_Images/ugt8.jpg) ![](Source_Images/ugt9.jpg)
+
+*Visualisation of Initial Temperature (Left) and Volume fraction (Right) along the geometry*
 
 The steady-state simulation of the thermosyphon was run for 10,000 iterations. The average temperature on the evaporator section and condenser section from the simulation closely follows the temperature values from the experimental data for the corresponding heat input. Thereforem a good agreement was observed between experimental and numerical analysis.
 
-> [Evaporator, condenser, adiabatic VOF]  
-> [Temperature contour, pressure contour]
+![](Source_Images/ugt10.png)
+
+![](Source_Images/ugt11.png)
+
+<br>
+
+![](Source_Images/ugt12.png)
+
+*Visualisation of Temperature contour (Left), Pressure contour (Middle) and Volume Fraction contour (Right)*
 
 ---
 
@@ -103,7 +121,12 @@ The steady-state simulation of the thermosyphon was run for 10,000 iterations. T
 
 This model combines boiling and condensation with porous media interaction to observe the coupling between the two phenomena. The geometry consists of three concentric cylinders constructed using the experimental setup dimensions: an outer solid shell, a porous zone, and an inner fluid region. The solid region (outermost cylinder) is divided into evaporator region, adiabatic region and a condenser region in the same ratios as done in the boiling and condensation setup. The porous region sits between the shell region and the fluid region. The geometry mimics the cross-section of the heat pipe in all the three regions.
 
+![](Source_Images/ugt13.png)
+*Geometry of the setup*
+
 A polyhedral mesh is applied using ANSYS Fluent Meshing. The same materials are used from the thermosyphon case—deionised water (vapour and liquid) and stainless steel.
+![](Source_Images/ugt14.png)
+*Polyhedral mesh*
 
 The simulation has no inlets or outlets. A 30% fill is patched similarly by assigning a liquid volume fraction of 1 in both fluid and porous regions.
 
@@ -124,14 +147,17 @@ The simulation has no inlets or outlets. A 30% fill is patched similarly by assi
 |Time | Steady |
 | Viscous | Standard k-e |
 
-*Table of setup*
+*Table of Model setup*
 
 The simulation is executed in steady-state for 5,000 iterations. Results confirm the operational principle of wick-based heat pipes: vapour travels from the evaporator to the condenser, condenses, and then returns via the porous medium to the evaporator.
 
-> [VOF for vapour]
+![](Source_Images/ugt15.png)
+*VoF for vapour*
 
 The visualisation shows where the blue streamlines ending at the condenser zone and transitioning into the porous region. Here, the red streamlines emerge, moving in the reverse direction toward the evaporator.
-> [Streamline plot for phase velocity]
+
+![](Source_Images/ugt16.png)
+*Streamline plot for phase velocity*
 
 ---
 
@@ -143,8 +169,14 @@ In this final setup, the effect of cooling water is replaced by providing convec
 
 The geometry is modeled in SolidWorks and features a 720 mm length, 12.7 mm outer diameter, 10.5 mm inner diameter, and a 1 mm wick layer. Due to symmetry, only half the body is simulated to reduce computational load.
 
-> [CAD model of the geometry at different angles]  
-> [Meshing of 90 degree]
+![](Source_Images/ugt17.png)
+*CAD model of the geometry at different angles*
+
+<br>
+
+![](Source_Images/ugt18.jpg)
+![](Source_Images/ugt19.png)
+*Meshing of 90 degree bending angle*
 
 Grid independence is tested with meshes ranging from 1.78 lakh to 33.25 lakh cells. The mesh with 4.6 lakh cells is chosen due to its close agreement with the finest mesh.
 
@@ -178,21 +210,33 @@ A Pressure-based solver, without gravity and operating under steady state condit
 |Time | Steady |
 | Viscous | Standard k-e |
 
-*Table of setup*
+*Table of Model setup*
 
-> [Volume fraction patch]
+![](Source_Images/ugt20.png)
+*Volume fraction patch*
 
 The simulation is run for 5,000 iterations. The following plots shows the area-weighted average of temperature of evaporator, condenser and adiabatic section. From these plots, it is observed that the numerical model for the experimental setup of the heat pipe is providing converging results which are reliable.
 
-> [Average weighted temperatures of evaporator, condenser, adiabatic; volume fraction vs iterations]
+![](Source_Images/ugt21.png)
+*Average weighted temperatures of evaporator (Left), condenser (Right) vs iterations*
+
+![](Source_Images/ugt22.png)
+*Average weighted temperatures of adiabatic (Left) , volume fraction (Right) vs iterations*
 
 In the following image, the red color shows the presence of only vapour (vapour volume fraction = 1) whereas, the blue region shows the presence of only liquid (vapour volume fraction = 0). In the enlarged view, the condensation of vapour into liquid in the porous zone is observed.
-> [Volume fraction contour of entire setup]  
-> [Temperature contour and pressure contour]
+
+![](Source_Images/ugt23.png)
+*Volume fraction contour of entire setup*
+
+![](Source_Images/ugt24.jpg) 
+*Temperature contour* 
+
+![](Source_Images/ugt25.jpg)
+*Pressure contour*
 
 Similarly, the simulations for other bending angles of the heat pipe were conducted with same settings and temperature balues across the surface of the heat pipe is recorded. Then, the calculated thermal conductivity of the heat pipe is plotted versus bending angle. And it is observed that the thermal conductivity decreases gradually as the bending angle increases.
 
-> [Thermal conductivity of heat pipe vs bending angle]
+![](Source_Images/ugt26.png)
 
 ---
 
