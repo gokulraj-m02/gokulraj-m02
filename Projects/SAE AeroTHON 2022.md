@@ -178,11 +178,10 @@ The UAV is designed to autonomously drop payloads on a color-coded target based 
 
 | Tool | Purpose |
 |------|---------|
-| **SolidWorks** | CAD design and mechanical modeling |
+| **SolidWorks** | CAD design and modeling |
 | **ANSYS Fluent** | CFD analysis|
 | **Python + OpenCV** | Target detection and payload dropping |
 | **ROS, PX4, MAVROS** | UAV autonomous control |
-| **Raspberry Pi** | Payload actuation and onboard processing |
 
 ---
 
